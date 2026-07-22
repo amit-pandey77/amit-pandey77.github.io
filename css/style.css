@@ -1,1 +1,468 @@
+/* ==========================================
+   AP Portfolio
+   Author : Amit Pandey
+   Version: 1.0
+========================================== */
 
+/* ---------- Google Font ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#0F172A;
+
+    color:#E2E8F0;
+
+    overflow-x:hidden;
+
+}
+
+/* ---------- Colors ---------- */
+
+:root{
+
+    --primary:#0078D4;
+
+    --secondary:#00A3A3;
+
+    --success:#22C55E;
+
+    --bg:#0F172A;
+
+    --card:#1E293B;
+
+    --card2:#243244;
+
+    --text:#E2E8F0;
+
+    --muted:#94A3B8;
+
+    --border:#334155;
+
+    --shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+/* ---------- Links ---------- */
+
+a{
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+img{
+
+    max-width:100%;
+
+}
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.glass-nav{
+
+    background:rgba(15,23,42,.90);
+
+    backdrop-filter:blur(15px);
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+    transition:.3s;
+
+    padding:15px 0;
+
+}
+
+.navbar-brand{
+
+    color:#fff;
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+.navbar-brand:hover{
+
+    color:var(--primary);
+
+}
+
+.nav-link{
+
+    color:#CBD5E1;
+
+    font-weight:500;
+
+    margin-left:18px;
+
+}
+
+.nav-link:hover{
+
+    color:#fff;
+
+}
+
+.navbar-toggler{
+
+    border:none;
+
+}
+
+.navbar-toggler:focus{
+
+    box-shadow:none;
+
+}
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    padding-top:110px;
+
+    background:
+    radial-gradient(circle at top right,#0078D420 0%,transparent 30%),
+    radial-gradient(circle at bottom left,#00A3A320 0%,transparent 30%),
+    #0F172A;
+
+}
+
+.hero h1{
+
+    font-size:64px;
+
+    font-weight:800;
+
+    line-height:1.1;
+
+    margin-bottom:15px;
+
+}
+
+.hero h2{
+
+    font-size:30px;
+
+    color:#CBD5E1;
+
+    margin-bottom:25px;
+
+    font-weight:600;
+
+}
+
+.hero p{
+
+    color:#94A3B8;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+
+}
+
+.hero-image{
+
+    width:360px;
+
+    border-radius:50%;
+
+    border:6px solid #1E293B;
+
+    box-shadow:var(--shadow);
+
+    transition:.4s;
+
+}
+
+.hero-image:hover{
+
+    transform:scale(1.03);
+
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.btn-primary{
+
+    background:var(--primary);
+
+    border:none;
+
+    border-radius:40px;
+
+    padding:14px 32px;
+
+    font-weight:600;
+
+}
+
+.btn-primary:hover{
+
+    background:#0B88EA;
+
+    transform:translateY(-3px);
+
+}
+
+.btn-outline-light{
+
+    border-radius:40px;
+
+    padding:14px 32px;
+
+    margin-left:15px;
+
+}
+
+.btn{
+
+    transition:.3s;
+
+}
+
+/* ==========================================
+   KPI
+========================================== */
+
+.kpi{
+
+    padding:90px 0;
+
+}
+
+.kpi-card{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:var(--shadow);
+
+}
+
+.kpi-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+}
+
+.kpi-card h3{
+
+    font-size:44px;
+
+    color:var(--primary);
+
+    font-weight:800;
+
+}
+
+.kpi-card p{
+
+    margin-top:10px;
+
+    color:var(--muted);
+
+    font-size:16px;
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+    padding:40px 0;
+
+    background:#0B1220;
+
+    border-top:1px solid var(--border);
+
+}
+
+footer p{
+
+    margin:0;
+
+    color:#94A3B8;
+
+}
+
+/* ==========================================
+   BADGE
+========================================== */
+
+.badge{
+
+    font-size:15px;
+
+    border-radius:30px;
+
+}
+
+/* ==========================================
+   UTILITIES
+========================================== */
+
+.section-title{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.section-subtitle{
+
+    color:var(--muted);
+
+    margin-bottom:50px;
+
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#0F172A;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#0078D4;
+
+    border-radius:20px;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+.hero{
+
+text-align:center;
+
+padding-top:150px;
+
+}
+
+.hero h1{
+
+font-size:48px;
+
+}
+
+.hero h2{
+
+font-size:24px;
+
+}
+
+.hero-image{
+
+margin-top:60px;
+
+width:280px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero h2{
+
+font-size:20px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.btn{
+
+display:block;
+
+width:100%;
+
+margin-bottom:15px;
+
+}
+
+.btn-outline-light{
+
+margin-left:0;
+
+}
+
+.kpi-card{
+
+margin-bottom:20px;
+
+}
+
+}
