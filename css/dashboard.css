@@ -1,1 +1,367 @@
+/*=====================================================
+    CyberShield Executive Dashboard
+    Author : Amit Pandey
+    Version : 2.0
+======================================================*/
 
+:root{
+
+    --dashboard-bg:#111827;
+
+    --card-bg:rgba(30,41,59,.65);
+
+    --glass-border:rgba(255,255,255,.08);
+
+    --primary:#0078D4;
+
+    --secondary:#00A3A3;
+
+    --success:#22C55E;
+
+    --warning:#F59E0B;
+
+    --danger:#EF4444;
+
+    --text:#F8FAFC;
+
+    --muted:#94A3B8;
+
+    --shadow:0 20px 45px rgba(0,0,0,.35);
+
+}
+
+/*=========================================
+Dashboard Section
+=========================================*/
+
+.dashboard{
+
+    position:relative;
+
+    padding:100px 0;
+
+    overflow:hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0F172A 0%,
+            #111827 50%,
+            #0B1220 100%
+        );
+
+}
+
+/*=========================================
+Animated Background
+=========================================*/
+
+.dashboard::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    top:-200px;
+
+    right:-180px;
+
+    border-radius:50%;
+
+    background:rgba(0,120,212,.12);
+
+    filter:blur(90px);
+
+}
+
+.dashboard::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:400px;
+
+    height:400px;
+
+    bottom:-180px;
+
+    left:-150px;
+
+    border-radius:50%;
+
+    background:rgba(0,163,163,.12);
+
+    filter:blur(80px);
+
+}
+
+/*=========================================
+Section Heading
+=========================================*/
+
+.dashboard .section-title{
+
+    color:#ffffff;
+
+    font-size:42px;
+
+    font-weight:700;
+
+}
+
+.dashboard .section-subtitle{
+
+    color:var(--muted);
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+/*=========================================
+Dashboard Card
+=========================================*/
+
+.dashboard-card{
+
+    position:relative;
+
+    background:var(--card-bg);
+
+    backdrop-filter:blur(16px);
+
+    -webkit-backdrop-filter:blur(16px);
+
+    border:1px solid var(--glass-border);
+
+    border-radius:24px;
+
+    padding:30px;
+
+    height:100%;
+
+    transition:.35s;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+}
+
+/* Glass Shine */
+
+.dashboard-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-150%;
+
+    width:60%;
+
+    height:100%;
+
+    transform:skewX(-20deg);
+
+    background:linear-gradient(
+
+        transparent,
+
+        rgba(255,255,255,.12),
+
+        transparent
+
+    );
+
+    transition:.8s;
+
+}
+
+.dashboard-card:hover::before{
+
+    left:180%;
+
+}
+
+/* Card Hover */
+
+.dashboard-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:rgba(0,120,212,.45);
+
+    box-shadow:
+
+        0 25px 55px rgba(0,0,0,.45),
+
+        0 0 25px rgba(0,120,212,.18);
+
+}
+
+/*=========================================
+Titles
+=========================================*/
+
+.dashboard-card h5{
+
+    color:#fff;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+.dashboard-card h6{
+
+    color:#fff;
+
+    font-size:18px;
+
+    margin-bottom:18px;
+
+}
+
+.dashboard-card i{
+
+    color:var(--primary);
+
+    margin-right:8px;
+
+}
+
+/*=========================================
+Mini KPI Cards
+=========================================*/
+
+.mini-card{
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.05);
+
+    border-radius:18px;
+
+    padding:22px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.mini-card:hover{
+
+    background:rgba(0,120,212,.12);
+
+    transform:translateY(-6px);
+
+}
+
+.mini-card h3{
+
+    color:#ffffff;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    margin-bottom:8px;
+
+}
+
+.mini-card span{
+
+    color:var(--muted);
+
+    font-size:15px;
+
+}
+
+/*=========================================
+Progress Bars
+=========================================*/
+
+.progress{
+
+    height:10px;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    background:#1E293B;
+
+}
+
+.progress-bar{
+
+    font-weight:600;
+
+    font-size:11px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/*=========================================
+Dashboard Lists
+=========================================*/
+
+.dashboard-list{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.dashboard-list li{
+
+    color:#CBD5E1;
+
+    padding:10px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+.dashboard-list li:last-child{
+
+    border-bottom:none;
+
+}
+
+/*=========================================
+Badges
+=========================================*/
+
+.dashboard .badge{
+
+    border-radius:30px;
+
+    padding:10px 20px;
+
+    font-size:14px;
+
+    letter-spacing:.5px;
+
+}
