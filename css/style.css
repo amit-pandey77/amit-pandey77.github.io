@@ -139,33 +139,80 @@ img{
 /*=====================================
 HERO SECTION
 ======================================*/
-/*=====================================
-Circular Profile Image
-======================================*/
+
+<div class="row align-items-center gy-5">
+
+    <div class="col-lg-5 text-center">
+
+        .profile-card{
+
+    max-width:380px;
+
+    margin:auto;
+
+}
+
+    </div>
+
+    <div class="col-lg-7 hero-content">
+
+        .hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    padding-top:120px;
+
+    padding-bottom:80px;
+
+}
+
+.hero-content{
+
+    padding-left:50px;
+
+}
+
+@media(max-width:992px){
+
+.hero-content{
+
+    padding-left:0;
+
+    text-align:center;
+
+    margin-top:40px;
+
+}
+
+}
+
+    </div>
+
+</div>
 
 .profile-image{
 
-    width:260px;
+    width:280px;
 
-    height:260px;
+    height:280px;
 
-    margin:0 auto;
+    margin:auto;
 
     border-radius:50%;
 
-    padding:6px;
+    overflow:hidden;
 
-    background:linear-gradient(
-        135deg,
-        #0078D4,
-        #00A3A3
-    );
+    border:6px solid #00A3A3;
 
     box-shadow:
-        0 0 20px rgba(0,120,212,.5),
-        0 0 40px rgba(0,163,163,.4);
 
-    animation:glow 3s infinite alternate;
+        0 0 20px rgba(0,120,212,.6),
+
+        0 0 50px rgba(0,163,163,.5);
 
 }
 
@@ -179,14 +226,28 @@ Circular Profile Image
 
     border-radius:50%;
 
-    display:block;
+}
+.hero-buttons{
 
-    border:4px solid #0F172A;
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin-top:30px;
 
 }
 
+@media(max-width:768px){
 
-.
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+}
 
 .hero .container{
 
@@ -232,57 +293,7 @@ Circular Profile Image
 
 }
 
-/*=====================================
- Executive Profile Photo
-======================================*/
 
-.profile-frame{
-
-    position:relative;
-
-    width:340px;
-
-    height:430px;
-
-    margin:auto;
-
-    border-radius:50% / 40%;
-
-    padding:8px;
-
-    background:linear-gradient(
-        135deg,
-        #0078D4,
-        #00A3A3,
-        #66D9FF
-    );
-
-    animation:borderGlow 5s linear infinite;
-
-    box-shadow:
-        0 0 20px rgba(0,120,212,.5),
-        0 0 45px rgba(0,163,163,.4),
-        0 0 80px rgba(0,120,212,.3);
-
-}
-
-.hero-image{
-
-    width:100%;
-
-    height:100%;
-
-    object-fit:cover;
-
-    border-radius:50% / 40%;
-
-    display:block;
-
-    border:5px solid rgba(255,255,255,.08);
-
-    transition:.5s;
-
-}
 
 .profile-frame:hover{
 
