@@ -139,7 +139,51 @@ img{
 /*=====================================
 HERO SECTION
 ======================================*/
+/*=====================================
+Circular Profile Image
+======================================*/
 
+.profile-image{
+
+    width:260px;
+
+    height:260px;
+
+    margin:0 auto;
+
+    border-radius:50%;
+
+    padding:6px;
+
+    background:linear-gradient(
+        135deg,
+        #0078D4,
+        #00A3A3
+    );
+
+    box-shadow:
+        0 0 20px rgba(0,120,212,.5),
+        0 0 40px rgba(0,163,163,.4);
+
+    animation:glow 3s infinite alternate;
+
+}
+
+.hero-image{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    display:block;
+
+    border:4px solid #0F172A;
+
+}
 .hero{
 
     min-height:100vh;
